@@ -2,8 +2,6 @@
 Profile
 Portfolio personal de Flavia P. Cisneros, UX/UI Designer.
 
-Sobre el proyecto
-
 Sitio web personal desarrollado para presentar mi perfil profesional, proyectos de UX/UI y experiencia en diseño.
 
 El portfolio reúne proyectos de:
