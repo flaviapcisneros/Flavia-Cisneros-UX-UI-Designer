@@ -1,17 +1,25 @@
+/* ========================================
+   RESET
+======================================== */
+
 * {
-  margin: 20;
-  padding: 10;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
+/* ========================================
+   VARIABLES
+======================================== */
 :root {
   --bg: #f0eee7;
   --surface: #ffffff;
   --ink: #262319;
   --ink-soft: #615c4e;
   --line: #d8d4c8;
-  --accent: #d19234;
+  --accent: #f2b705;
   --accent-ink: #ffffff;
-  --mark: #d19234;
+  --mark: #f2b705;
   scroll-behavior: smooth;
   padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
@@ -23,9 +31,9 @@
     --ink: #edebe3;
     --ink-soft: #afa999;
     --line: #38352c;
-    --accent: #d19234;
+    --accent: #f2b705;
     --accent-ink: #141420;
-    --mark: #d19234;
+    --mark: #f2b705;
   }
 }
 :root[data-theme="dark"] {
@@ -34,18 +42,18 @@
   --ink: #edebe3;
   --ink-soft: #afa999;
   --line: #38352c;
-  --accent: #d19234;
+  --accent: #f2b705;
   --accent-ink: #141420;
-  --mark: #d19234;
+  --mark: #f2b705;
 }
 html {
-  scroll-padding-top: env(safe-area-inset-top, 10px);
+  scroll-padding-top: env(safe-area-inset-top, 0px);
 }
 * {
   box-sizing: border-box;
 }
 body {
-  margin: 40;
+  margin: 0;
   background: var(--bg);
   color: var(--ink);
   font-family: "IBM Plex Sans", system-ui, sans-serif;
@@ -63,23 +71,24 @@ a {
   color: inherit;
 }
 .wrap {
+  width: calc(100% - 48px);
   max-width: 640px;
-  margin: 20 auto;
-  padding: 20 24px;
+  margin: auto;
+  padding: 12px 21;
 }
 section {
-  padding: 56px 10;
+  padding: 56px 0;
 }
 .rule {
   height: 1px;
   background: var(--line);
   max-width: 640px;
-  margin: 5 auto;
+  margin: 0 auto;
 }
 
 /* Hero */
 .hero {
-  padding: 72px 20 48px;
+  padding: 60px 0px 48px;
 }
 .avatar {
   width: 84px;
@@ -87,7 +96,6 @@ section {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 22px;
-  padding: 5px;
   border: 1px solid var(--line);
   display: block;
 }
@@ -128,7 +136,6 @@ section {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 28px;
-  padding-bottom: 10px;
 }
 .btn {
   display: inline-flex;
@@ -167,7 +174,7 @@ section {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 10px;
+  margin-bottom: 20px;
 }
 .label .sq {
   width: 9px;
@@ -263,8 +270,7 @@ section {
 }
 
 footer {
-  padding: 40px 10 48px;
-  margin: 20px;
+  padding: 40px 0 48px;
   text-align: left;
 }
 footer .rowend {
@@ -278,19 +284,19 @@ footer a {
   font-size: 14px;
   color: var(--ink-soft);
   text-decoration: none;
-  border-bottom: 5px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 footer .note {
   font-size: 13px;
   color: var(--ink-soft);
-  max-width: 100ch;
+  max-width: 80ch;
 }
 
 @media (max-width: 600px) {
   section {
-    padding: 40px 20;
+    padding: 40px 0;
   }
   .hero {
-    padding: 52px 20 36px;
+    padding: 52px 0 36px;
   }
 }
