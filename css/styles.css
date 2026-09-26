@@ -71,10 +71,10 @@ a {
   color: inherit;
 }
 .wrap {
-  width: calc(100% - 48px);
+  width: calc(100% - 24px);
   max-width: 640px;
   margin: auto;
-  padding: 12px 21;
+  padding: 12px;
 }
 section {
   padding: 56px 0;
@@ -243,7 +243,7 @@ section {
   margin-top: 14px;
 }
 .chip {
-  font-size: 12.5px;
+  font-size: 10px;
   border: 1px solid var(--line);
   padding: 4px 9px;
   border-radius: 4px;
@@ -252,6 +252,7 @@ section {
 .frame-cta {
   margin-top: 18px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 14px;
 }
@@ -294,9 +295,9 @@ footer .note {
 
 @media (max-width: 600px) {
   section {
-    padding: 40px 0;
+    padding: 12px 0;
   }
   .hero {
-    padding: 52px 0 36px;
+    padding: 52px 0 12px;
   }
 }
